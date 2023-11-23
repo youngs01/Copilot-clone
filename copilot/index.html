@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/0a7c965840.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Copilot | ModernClient Portal</title>
+</head>
+
+<body>
+
+  <div class="hero-background" style="overflow: hidden;">
+
+
+    <div class=" background-hero-announcement">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-2">
+            <a href="" class="d-flex align-items-center justify-content-center " style="transition: all ease 1s;">
+              <p
+                class="d-flex justify-content-center announcment-heading p-0 m-0 align-items-center text-white position-relative">
+                Announcing Copilot on make
+                <i class="fa-solid chevron-announcement fa-chevron-right "></i>
+                <i class="fa-solid fa-arrow-right arrow-announcement"></i>
+                </i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg  ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="greenlogo.0d8a4e2a.svg" alt=""></a>
+        <div class="d-flex align-items-center gap-2">
+          <div class="d-block d-lg-none pt-3">
+            <ul class="d-flex align-items-center gap-3">
+              <li class="d-flex" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="text-green-shade"><span><i
+                      class="text-green-shade fa-solid fa-user appear-in-434"></i></span></span>
+              </li>
+              <li class="d-flex"><a href="" class="btn-trialls">Start trial</a></li>
+            </ul>
+          </div>
+          <button class="navbar-toggler bg-white  align-items-center navbar-toggler-btn " type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse px-0 px-lg-5" id="navbarNav">
+          <ul class="navbar-nav navbar-nav-ul">
+            <div class="dropdown ">
+              <button class="nav-btn nav-link w-100 text-start position-relative" type="button"
+                data-bs-toggle="dropdown" onmouseover="showDropdown()" aria-expanded="false">
+                Features
+              </button>
+              <div class="dropdown-menu mt-3 mb-3 mb-lg-0 rounded-0 bg-white dropdown-features">
+                <div class="svg-feature-line d-none d-lg-block">
+                  <svg width="93" height="30" viewBox="0 0 93 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="20.5" y1="-2.18557e-08" x2="20.5" y2="30" stroke="#DFF8E9"></line>
+                    <line x1="20" y1="7.5" x2="92" y2="7.50001" stroke="#DFF8E9"></line>
+                    <line x1="92.5" y1="-2.18557e-08" x2="92.5" y2="8" stroke="#DFF8E9"></line>
+                  </svg>
+                </div>
+                <div class="d-flex  flex-column ">
+                  <div class="mb-2 px-2 d-block d-lg-none">
+                    <button class="px-2 py-1 bg-transparent border-0 fw-normall" onclick="dropdownback()">back <i
+                        class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                  <a href="#" class="dropdown-child-features  feature-msg d-flex align-items-center  px-3 py-3 gap-3">
+
+                    <div class="">
+                      <img src="menumsg.svg" style="max-width:50px;">
+                    </div>
+                    <div class="d-flex flex-column" style="gap: 1px;">
+                      <h6 class="m-0 p-0 fw-normall">Messaging</h6>
+                      <p class="m-0 p-0">Communicate with clients securely</p>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-child-features feature-billing d-flex align-items-center py-3 px-3 gap-3">
+                    <div class="">
+                      <img src="billmenuicon.svg" style="max-width:50px;">
+                    </div>
+                    <div class="">
+                      <h6 class="m-0 p-0 fw-normall">Billing</h6>
+                      <p class="m-0 p-0">Create invoices & subscriptions</p>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-child-features feature-files d-flex align-items-center py-3 px-3 gap-3">
+                    <div class="">
+                      <img src="filemenuicon.svg" style="max-width:50px;">
+                    </div>
+                    <div class="">
+                      <h6 class="m-0 p-0 fw-normall">File & eSignature</h6>
+                      <p class="m-0 p-0">Share files & sign contracts</p>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-child-features feature-form d-flex align-items-center py-3 px-3 gap-3">
+                    <div class="">
+                      <img src="formmenuicon.svg" style="max-width:50px;">
+                    </div>
+                    <div class="">
+                      <h6 class="m-0 p-0 fw-normall">Forms</h6>
+                      <p class="m-0 p-0">Streamline data collection</p>
+                    </div>
+                  </a>
+                  <a href="#" class="dropdown-child-features feature-help d-flex align-items-center py-2 px-3 gap-3">
+                    <div class="">
+                      <img src="deskmenuicon.svg" style="max-width:50px;">
+                    </div>
+                    <div class="">
+                      <h6 class="m-0 p-0 fw-normall">Helpdesk</h6>
+                      <p class="m-0 p-0">Improve customer support</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a href="#"><span class="nav-link nav-btn">Apps</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"><span class="nav-link nav-btn">Automations</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> <span class="nav-link nav-btn">Solutions</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> <span class="nav-link nav-btn">Resources</span></a>
+            </li>
+            <li class="nav-item">
+              <a href=""><span class="nav-link nav-btn">Pricing</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <ul class="navbar-nav gap-3 align-items-center">
+            <li><a href=""><span class="nav-btn">Contact sales</span></a></li>
+
+            <li type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#"><span
+                  class="nav-btn">Log in</span></a></li>
+            <li><a href="#"><span class="btn-trial">Start trial</span></a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid pt-5">
+      <div class="container pt-0 pt-md-5">
+        <div class="row">
+          <div class="col-12  ">
+            <h1 class="hero-heading">
+              Copilot is the modern client portal <span class="d-none d-lg-block"></span> for service businesses
+            </h1>
+            <p class="hero-para pt-4 ">Give clients a one-stop shop experience with a client portal that streamlines
+              <span class="d-none d-lg-block"></span> messaging, payments, file-sharing, help centers, custom app
+              access, and more.
+            </p>
+          </div>
+        </div>
+
+        <div class="row pt-4">
+          <div class="col-12">
+
+            <div class="d-flex align-items-center justify-content-center flex-wrap gap-5">
+
+              <a href="#">
+                <div class="d-flex flex-column star-div gap-2">
+                  <div class="d-flex hero-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-ori fw-normall">G2</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="d-flex flex-column star-div gap-2 ">
+                  <div class="d-flex hero-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-ori fw-normall">Capterra</p>
+                  </div>
+                </div>
+              </a>
+
+
+              <a href="#">
+                <div class="d-flex flex-column star-div gap-2">
+                  <div class="d-flex hero-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-ori fw-normall">ProductHunt</p>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-12">
+            <div class="text-center justify-content-center">
+              <a href="#"><button class="btn hero-btn fw-normall">Try for free</button></a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row pt-5 ">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="hero-img  ">
+              <img src="hero-image.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container-fluid pt-5 ">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="">
+            <h1 class="parent-heading fw-normal">Thousands of service businesses choose Copilot to streamline their
+              business and client experience<span class="text-success">.</span></h1>
+            <p class="parent-para">Tech-enabled service businesses of all types — accounting firms, marketing agencies,
+              startups, consulting firms, real estate <span class="d-none d-lg-block"></span> firms, and others — run on
+              Copilot to provide clients a branded, unified, and delightful experience on web and mobile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-12">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide position-relative">
+              <div class="slide1 px-3 py-3">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="startupLP.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>Technology</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide  position-relative">
+              <div class="slide1 px-3 py-3">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="pexels-rfstudio-3810793_1.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>Marketing Agencies</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide  position-relative">
+              <div class="slide1 px-3 py-3">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="pexels-monstera-9479820_1.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>Accounting & Bookkeeping</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide  position-relative">
+              <div class="slide1 px-3 py-3 ">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="pexels-ron-lach-9594415.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>eCommerce</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide  position-relative">
+              <div class="slide1 px-3 py-3">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="pexels-asad-photo-maldives-169198.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>Freelancers</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide  position-relative">
+              <div class="slide1 px-3 py-3">
+                <div class=" d-flex justify-content-center slide-img-parent">
+                  <img class="slide-img" src="pexels-cottonbro-studio-4098274_1.webp" alt="">
+                </div>
+                <div class=" pt-3 ">
+                  <h5>Law Firms</h5>
+                  <p class="slide-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, expedita
+                    nisi optio nihil temporibus is the most cumque quam earum exercitationem tenetur recusandae
+                    scrumpsio rerum suscipit atque
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid mt-5 pt-5">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="">
+            <h1 class="neighbour-heading">
+              Everything you need to run a <span class="d-none d-lg-block"></span> modern service business<span
+                class="text-success">.</span>
+            </h1>
+            <p class="neighbour-para">Consolidate your technology stack. Copilot comes with messaging, billing,
+              file-sharing, eSignatures, intake <span class="d-none d-lg-block"></span>
+              forms, and help desks out of the box. And with modularity built in, start with just one App and seamlessly
+              enable <span class="d-none d-lg-block"></span> more over time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5">
+        <div class="col-12">
+          <ul class="nav nav-pills  d-flex align-items-center gap-3 navtabs-ul mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="navtabs-btn active" id="pills-message-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-message" type="button" role="tab" aria-selected="true">Messaging
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class=" navtabs-btn" id="pills-billing-tab" data-bs-toggle="pill" data-bs-target="#pills-billing"
+                type="button" role="tab" aria-selected="false">Billing</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class=" navtabs-btn" id="pills-files-tab" data-bs-toggle="pill" data-bs-target="#pills-files"
+                type="button" role="tab" aria-selected="false">Files</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class=" navtabs-btn" id="pills-forms-tab" data-bs-toggle="pill" data-bs-target="#pills-forms"
+                type="button" role="tab" aria-selected="false">Forms</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class=" navtabs-btn" id="pills-helpdesk-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-helpdesk" type="button" role="tab" aria-selected="false">Helpdesk</button>
+            </li>
+          </ul>
+          <div class="tab-content  " id="pills-tabContent">
+            <div class="tab-pane fade show active pt-3" id="pills-message" role="tabpanel"
+              aria-labelledby="pills-message-tab" tabindex="0">
+              <div class="row ">
+                <div class="col-12 col-lg-3 position-relative ">
+                  <div class="line-nav-tabs d-none d-lg-block"></div>
+                  <div class="d-flex flex-column  ">
+                    <img src="menumsg.svg" alt="" class="navtabs-logo d-none d-lg-block">
+                    <h4 class="navtabs-heading pt-0 pt-lg-5">Messaging</h4>
+                    <p class="navtabs-para">Let clients securely and seamlessly message you from your portal, and give
+                      your team the ability to centralize client communication and stay organized.</p>
+                    <a href="#" class="pt-3 pt-lg-4"><button class="nav-tabs-btn ">Learn more</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9 pt-5 pt-lg-0">
+                  <div class="nav-tabs-hero-img p-3">
+                    <img src="Messages.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade pt-3" id="pills-billing" role="tabpanel" aria-labelledby="pills-billing-tab"
+              tabindex="0">
+              <div class="row ">
+                <div class="col-12 col-lg-3 position-relative ">
+                  <div class="line-nav-tabs d-none d-lg-block"></div>
+                  <div class="d-flex flex-column  ">
+                    <img src="billmenuicon.svg" alt="" class="navtabs-logo d-none d-lg-block">
+                    <h4 class="navtabs-heading pt-0 pt-lg-5">Billing</h4>
+                    <p class="navtabs-para">Create branded invoices and subscriptions, and make it easy for client to
+                      pay, access invoices, and manage their payment credentials.</p>
+                    <a href="#" class="pt-3 pt-lg-4"><button class="nav-tabs-btn ">Learn more</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9 pt-5 pt-lg-0">
+                  <div class="nav-tabs-hero-img p-3">
+                    <img src="Invoices.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade pt-3" id="pills-files" role="tabpanel" aria-labelledby="pills-files-tab"
+              tabindex="0">
+              <div class="row ">
+                <div class="col-12 col-lg-3 position-relative ">
+                  <div class="line-nav-tabs d-none d-lg-block"></div>
+                  <div class="d-flex flex-column  ">
+                    <img src="filemenuicon.svg" alt="" class="navtabs-logo d-none d-lg-block">
+                    <h4 class="navtabs-heading pt-0 pt-lg-5">Files</h4>
+                    <p class="navtabs-para">Make it easy to share files with clients, stay organized with folders, and
+                      get contracts signed with eSignature requests.</p>
+                    <a href="#" class="pt-3 pt-lg-4"><button class="nav-tabs-btn ">Learn more</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9 pt-5 pt-lg-0">
+                  <div class="nav-tabs-hero-img p-3">
+                    <img src="Files.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade pt-3" id="pills-forms" role="tabpanel" aria-labelledby="pills-forms-tab"
+              tabindex="0">
+              <div class="row ">
+                <div class="col-12 col-lg-3 position-relative ">
+                  <div class="line-nav-tabs d-none d-lg-block"></div>
+                  <div class="d-flex flex-column  ">
+                    <img src="formmenuicon.svg" alt="" class="navtabs-logo d-none d-lg-block">
+                    <h4 class="navtabs-heading pt-0 pt-lg-5">Forms</h4>
+                    <p class="navtabs-para">Streamline data collection with forms you can assign to clients or always-on
+                      forms that clients can fill out any time.</p>
+                    <a href="#" class="pt-3 pt-lg-4"><button class="nav-tabs-btn ">Learn more</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9 pt-5 pt-lg-0">
+                  <div class="nav-tabs-hero-img p-3">
+                    <img src="Create.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade pt-3" id="pills-helpdesk" role="tabpanel" aria-labelledby="pills-helpdesk-tab"
+              tabindex="0">
+              <div class="row ">
+                <div class="col-12 col-lg-3 position-relative ">
+                  <div class="line-nav-tabs d-none d-lg-block"></div>
+                  <div class="d-flex flex-column  ">
+                    <img src="formmenuicon.svg" alt="" class="navtabs-logo d-none d-lg-block">
+                    <h4 class="navtabs-heading pt-0 pt-lg-5">Forms</h4>
+                    <p class="navtabs-para">Streamline data collection with forms you can assign to clients or always-on
+                      forms that clients can fill out any time.</p>
+                    <a href="#" class="pt-3 pt-lg-4"><button class="nav-tabs-btn ">Learn more</button></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-9 pt-5 pt-lg-0">
+                  <div class="nav-tabs-hero-img p-3">
+                    <img src="Create.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5">
+    <div class="container pt-0 pt-lg-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="">
+            <h1 class="copilot-apps-heading">Go even further with Copilot's App Platform<span
+                class="text-success">.</span> </h1>
+            <p class="copilot-apps-para fw-normall">Connect the products you already use and integrate them into your
+              portal. Calendly, <span class="d-none d-lg-block"></span>
+              Airtable, Google Data Studio, and thousands more are available for integration. You can also <span
+                class="d-none d-lg-block"></span> build or request a Custom App and create a completely unique
+              experience.</p>
+            <button class="copilot-app-btn mt-4 fw-bold">
+              Browse apps
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-12">
+        <div class="tech-slideshow position-relative">
+          <div class="copilot-app-border-track"></div>
+          <div class="mover-1  ">
+
+
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="google-sheets-icon.webp" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Sheets</h6>
+              </div>
+            </div>
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_youtube.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">YouTube</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Docs.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Docs</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Loom.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Loom</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_databox.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Data box</h6>
+              </div>
+            </div>
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="google-sheets-icon.webp" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Sheets</h6>
+              </div>
+            </div>
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_youtube.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">YouTube</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Docs.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Docs</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Loom.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Loom</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_databox.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Data box</h6>
+              </div>
+            </div>
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="google-sheets-icon.webp" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Sheets</h6>
+              </div>
+            </div>
+
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_youtube.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">YouTube</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Docs.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Google Docs</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_Loom.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Loom</h6>
+              </div>
+            </div>
+            <div class="copilot-app-card">
+              <div class="d-flex align-items-center gap-3">
+                <img src="Icon_-_databox.svg" alt="" class="p-0 m-0">
+                <h6 class="m-0 fw-bold">Data box</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 ">
+
+
+          <div class="d-flex flex-column gap-2">
+            <h1 class="automation-heading">Scale faster than your headcount with <span class="d-none d-lg-block"></span>
+              Automations<span class="text-success">.</span></h1>
+
+            <p class="neighbour-para">Automate workflows and get valuable time back. For example, you can let clients
+              self-serve sign up <span class="d-none d-lg-block"></span>
+              and then automatically send them a welcome message, assign an onboarding form, and upload <span
+                class="d-none d-lg-block"></span>
+              standard files. Use Zapier or Make for easy setup or our API for full control.</p>
+            <a href="#">
+              <button class="btn-automations bg-transparent px-4 py-2 border-1 rounded-5 mt-3 fw-bold ">See
+                automations</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5 automation-row">
+
+        <div class="col-4  px-4 position-relative ">
+          <div class="automation-track"></div>
+          <div class="automation-track-vertical">
+
+          </div>
+          <div class="automation-client position-relative">
+            <div class="automation-processing-icon">
+              <img src="true-icon.svg" alt="">
+            </div>
+            <div class=" py-3 px-3 d-flex align-items-center gap-3">
+              <div class="">
+                <img src="linkicon.svg" alt="" class="automation-client-img">
+              </div>
+              <div class=" d-flex flex-column ">
+                <p class="fw-normall">Client activate account</p>
+                <p class="m-0 p-0">Trigger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 px-4  position-relative ">
+
+          <div class="automation-track"></div>
+
+          <div class="d-flex flex-column gap-4">
+
+            <div class="automation-client ">
+              <div class="automation-processing-icon-animation">
+                <img src="loading-pic.png" alt="">
+              </div>
+              <div class=" py-3 px-3 d-flex align-items-center gap-3">
+                <div class="">
+                  <img src="linkicon.svg" alt="" class="automation-client-img">
+                </div>
+                <div class=" d-flex flex-column ">
+                  <p class="fw-normall">Company size < 50</p>
+                      <p class="m-0 p-0">Condition</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="automation-client position-relative ">
+              <div class="automation-processing-icon-animation">
+                <img src="loading-pic.png" alt="">
+              </div>
+              <div class="automation-track " style="left: -30px; max-width: 30px;"></div>
+              <div class="automation-track" style="right: -50px;"></div>
+              <div class=" py-3 px-3 d-flex align-items-center gap-3 ">
+                <div class="">
+                  <img src="linkicon.svg" alt="" class="automation-client-img">
+                </div>
+                <div class=" d-flex flex-column ">
+                  <p class="fw-normall">Company size > 50 </p>
+                  <p class="m-0 p-0">Condition</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-4 px-4  position-relative">
+
+          <div class="d-flex flex-column gap-4">
+            <div class="automation-client ">
+              <div class="automation-processing-icon-animation">
+                <img src="loading-pic.png" alt="">
+              </div>
+              <div class=" py-3 px-3 d-flex align-items-center gap-3">
+                <div class="">
+                  <img src="action-icon.svg" alt="" class="automation-client-img">
+                </div>
+                <div class=" d-flex flex-column ">
+                  <p class="fw-normall">Assign SMB onboarding form</p>
+                  <p class="m-0 p-0">Action</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="automation-client  position-relative">
+              <div class="automation-processing-icon-animation">
+                <img src="loading-pic.png" alt="">
+              </div>
+              <div class="automation-track-vertical-last"></div>
+              <div class=" py-3 px-3 d-flex align-items-center gap-3">
+                <div class="">
+                  <img src="msg-icon2.svg" alt="" class="automation-client-img">
+                </div>
+                <div class=" d-flex flex-column ">
+                  <p class="fw-normall">Send meeting scheduling link</p>
+                  <p class="m-0 p-0">Action</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="automation-client position-relative ">
+              <div class="automation-processing-icon-animation">
+                <img src="loading-pic.png" alt="">
+              </div>
+
+              <div class="automation-track " style="left: -30px; max-width: 30px;"></div>
+
+              <div class=" py-3 px-3 d-flex align-items-center gap-3">
+                <div class="">
+                  <img src="salesforce-icon.svg" alt="" class="automation-client-img">
+                </div>
+                <div class=" d-flex flex-column ">
+                  <p class="fw-normall">Create lead in Salesforce</p>
+                  <p class="m-0 p-0">Action</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid pt-5">
+    <div class="container pt-0 pt-lg-5">
+      <div class="row justify-content-center">
+
+        <div class="col-11  border border-dark border-1">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="row px-0 px-lg-5 py-3 py-lg-5 ">
+                <div class="col-12 pb-4">
+                  <h2 class="support-heading">The support you need, when <div class="d-none d-lg-block"></div>
+                    you need it<span class="text-success">.</span></h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                  <div class="d-flex flex-column gap-2">
+                    <h4 class="fw-normall support-option-heading m-0 p-0">Our Community</h4>
+                    <p class="support-option-para p-0 m-0">
+                      Meet our team and a community of businesses that run on Copilot. Requires a Slack account.
+                    </p>
+                    <a href="#" class="support-option-btn d-flex align-items-center gap-2">Join Community <i
+                        class="fa-solid fa-chevron-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 pt-5 pt-md-0">
+                  <div class="d-flex flex-column gap-2">
+                    <h4 class="fw-normall support-option-heading m-0 p-0">Weekly Live Demo</h4>
+                    <p class="support-option-para p-0 m-0">
+                      Join our team as we take you on a tour of the Copilot platform in a 20-minute demo followed by a
+                      live Q&A.
+                    </p>
+                    <a href="#" class="support-option-btn d-flex align-items-center gap-2">Register <i
+                        class="fa-solid fa-chevron-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 pt-5">
+                  <div class="d-flex flex-column gap-2">
+                    <h4 class="fw-normall support-option-heading m-0 p-0">Copilot University</h4>
+                    <p class="support-option-para p-0 m-0">
+                      Watch video tutorials that cover getting set up, configuring your portal, best practices, and
+                      more.
+                    </p>
+                    <a href="#" class="support-option-btn d-flex align-items-center gap-2">Watch videos<i
+                        class="fa-solid fa-chevron-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 pt-5">
+                  <div class="d-flex flex-column gap-2">
+                    <h4 class="fw-normall support-option-heading m-0 p-0">Copilot Guide</h4>
+                    <p class="support-option-para p-0 m-0">
+                      Read our comprehensive guide about how to get started and implement best practices.
+                    </p>
+                    <a href="#" class="support-option-btn d-flex align-items-center gap-2">Read guide<i
+                        class="fa-solid fa-chevron-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-4 support-img m-0 p-0 ">
+              <img src="helpimage.webp" alt="" class="w-100 h-100">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- this is an modal that is connected to lognin button this will only activate when login button is clicked -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog custom-modal-dialog"> <!-- Added custom-modal-dialog class -->
+            <div class="modal-content bg-transparent">
+              <div class="modal-body bg-transparent">
+                <div class="containerr justify-content-center px-0 ">
+                  <div class="row justify-content-center">
+
+                    <div class="col-12 parent-container bg-white haha px-3">
+                      <div class="row">
+
+                        <div class="col-12 col-lg-6  py-5 text-center px-0 ">
+                          <div class="foam-content pt-5">
+                            <h2>Sign Up</h2>
+                            <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                              <a href="#">
+                                <div class="icon-brands"><i class="fa-brands fa-facebook"></i></div>
+                              </a>
+                              <a href="#">
+                                <div class="icon-brands"><i class="fa-brands fa-google"></i></div>
+                              </a>
+                              <a href="#">
+                                <div class="icon-brands"><i class="fa-brands fa-linkedin "></i></div>
+                              </a>
+                              <a href="#">
+                                <div class="icon-brands"><i class="fa-brands fa-github"></i></div>
+                              </a>
+                            </div>
+                            <div class="pt-2">
+                              <p>or use your email password</p>
+                            </div>
+                            <form action="" class="d-flex align-items-center gap-3 flex-column 3">
+                              <input type="text" class="input-email" placeholder="Email">
+                              <input type="text" placeholder="Password" class="input-password">
+
+                            </form>
+
+                            <div class="">
+
+                              <a href="#">
+                                <p class="forget-password-text">Forget Your <span class="password-hover">password
+                                  </span> ?</p>
+                              </a>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-center p-0 m-0">
+
+                              <button class="px-5 rounded-4 py-2 signup-btn ">Sign up</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 d-none d-lg-block m-0 p-0 position-relative">
+
+                          <div class="blob-container  h-100 justify-content-center ">
+
+                            <div class=" text-center h-100 d-flex flex-column gap-1 justify-content-center">
+                              <h2 class="welcome-heading">Welcome back</h2>
+                              <p class="welcome-para">Register youself with your personal information <span
+                                  class="d-block"></span> to3 use our new features</p>
+                              <button class="align-self-center d-flex rounded-4 welcome-btn">
+                                Sign in
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- this is the end of modal of login -->
+
+
+
+
+
+
+  <div class="container-fluid position-relative   mt-5 p-0">
+    <canvas id="gradient-canvas"></canvas>
+<div class="py-0 py-md-5">
+  <div class="row position-relative py-5 w-100">
+    <div class="col-1 col-lg-3 py-5">
+  
+    </div>
+    <div class="col-10 col-lg-6 py-5 position-relative p-sm-0">
+      
+  <div class="text-center d-flex flex-column justify-content-cente ">
+  
+    <div class="canva-heading-div">
+      <h1 class="canva-heading ">
+        Upgrade your <span class="d-none d-md-block"></span> service business
+      </h1>
+    </div>
+  
+    <div class="canva-group-btn pt-3">
+      <a href="#" class="canva-trial-btn">Start trial</a>
+      <a href="#" class="canva-demo-btn">Book demo</a>
+    </div>
+  </div>
+  
+    </div>
+    <div class="col-1 col-lg-3 py-5">
+  
+    </div>
+  </div>
+</div>
+  </div>
+
+
+
+
+
+
+  <div class="container-fluid footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12  col-md-3  ">
+          <div class="d-flex flex-column gap-2 gap-md-4">
+            <img src="blacklogo.svg" alt="" class="footer-img">
+            <p class="footer-text">The new standard for the modern services business</p>
+            <div class="d-flex align-items flex-wrap gap-4 gap-md-2 gap-lg-4 footer-media-icon">
+              <a href="#"><i class="fa-brands fa-twitter footer-media-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook footer-media-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin footer-media-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube footer-media-icon"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram footer-media-icon"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9  pt-md-0">
+          <div class="row">
+
+            <div class="col-12 col-md-4 pt-5 pt-md-0 ">
+
+              <div class="d-flex flex-column gap-2 ">
+                <h6 class="m-0 footer-heading-btn">Features</h6>
+                <a href="#">
+                  <p class="btn-footer">Messaging</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Billing</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Files</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Forms</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Helpdesk</p>
+                </a>
+              </div>
+
+              <div class="d-flex flex-column pt-4 gap-2">
+                <h6 class="m-0 footer-heading-btn">Platform</h6>
+                <a href="#">
+                  <p class="btn-footer">API Reference</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Apps</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">App Directory</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Automations</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Automations Directory</p>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 pt-5 pt-md-0">
+
+              <div class="d-flex flex-column gap-2">
+                <h6 class="m-0 footer-heading-btn">Solutions</h6>
+                <a href="#">
+                  <p class="btn-footer">Accounting and Bookkeeping</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Marketing Agencies</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Startups</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">consulting Firms</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Real Estate</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Freelancers</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Law Firms</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Small businesses</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Designer</p>
+                </a>
+
+              </div>
+
+              <div class="d-flex flex-column pt-4 gap-2">
+                <h6 class="m-0 footer-heading-btn">Company</h6>
+                <a href="#">
+                  <p class="btn-footer">Brand</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Pricing</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Jobs</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Terms</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Privacy</p>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 pt-5 pt-md-0">
+
+              <div class="d-flex flex-column gap-2">
+
+                <h6 class="m-0 footer-heading-btn">Resources</h6>
+                <a href="#">
+                  <p class="btn-footer">Blogs</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Security</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Whats New</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Video Tutorial</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Compare</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">System Status</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Parnerships</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Glossary</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Sitemap</p>
+                </a>
+
+              </div>
+
+              <div class="d-flex flex-column pt-4 gap-2">
+                <h6 class="m-0 footer-heading-btn">Blog</h6>
+                <a href="#">
+                  <p class="btn-footer">Announcing Copilot on Make</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Copilot 2023 Fall Release</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Introducing Copilot Automations</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Introducing Forms 2.0</p>
+                </a>
+                <a href="#">
+                  <p class="btn-footer">Announcing our Series A</p>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
