@@ -1156,6 +1156,15 @@ button {
         font-size: 13px;
     }
 
+    h1{
+        font-size: 25px !important;
+    }
+
+    button{
+        padding: 5px 20px !important;
+        font-size: 14px !important;
+    }
+
 
 }
 
